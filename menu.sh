@@ -236,6 +236,7 @@ case $opt in
 28) clear ; clear-log ;;
 25) clear ; nano /etc/issue.net ;;
 26) clear ; kernel-updt ;;
+27) clear ; running ;;
 0) clear ; reboot ;;
 x) exit ;;
 *) sleep 1; menu ;;
