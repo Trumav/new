@@ -125,6 +125,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 2
 clear
 wget https://raw.githubusercontent.com/fromhell26/new/main/running.sh
+
 rm -f /root/ssh-vpn.sh
 rm -f /root/ss.sh
 rm -f /root/ssr.sh
