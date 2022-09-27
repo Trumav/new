@@ -1,22 +1,30 @@
-#!/bin/bash
-RED='\e[1;31m'
-GREEN='\e[0;32m'
-BLUE='\e[0;34m'
-NC='\e[0m'
-MYIP=$(wget -qO- ipinfo.io/ip);
+##!/bin/bash
+clear
+cekray=cat /root/log-install.txt | grep -ow "v2ray" | sort | uniq
+if [ "$cekray" = "v2ray" ]; then
+domainlama=cat /etc/v2ray/domain
+else
+domainlama=cat /etc/v2ray/domain
+fi
 
 clear
-echo start
+echo -e "[ ${green}INFO${NC} ] Start " 
 sleep 0.5
-source /var/lib/premium-script/ipvps.conf
-domain=$IP
+systemctl stop nginx
 systemctl stop v2ray
 systemctl stop v2ray@none
+/root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
 /root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
 ~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key --ecc
-systemctl start v2ray
-systemctl start v2ray@none
-echo Done
+echo -e "[ ${green}INFO${NC} ] Renew cert done... " 
+sleep 2
+echo -e "[ ${green}INFO${NC} ] Starting service $Cek " 
+sleep 2
+echo $domain > /etc/v2ray/domain
+systemctl restart $Cek
+systemctl restart nginx
+echo -e "[ ${green}INFO${NC} ] All finished... " 
 sleep 0.5
-clear 
-neofetch
+echo ""
+read -n 1 -s -r -p "Press any key to back on menu"
+menu
