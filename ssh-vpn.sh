@@ -105,6 +105,7 @@ fi
 
 mesg n || true
 clear
+neofetch
 END
 chmod 644 /root/.profile
 
