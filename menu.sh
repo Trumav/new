@@ -113,7 +113,7 @@ echo ""
 echo ""
 echo ""
 echo -e "${red}══════════════════════════════════════════════════════════${NC}"
-echo -e "                    WORLDSSH TEAM " | lolcat
+echo -e "                    ENVY26 KID TEAM " | lolcat
 echo -e "${red}══════════════════════════════════════════════════════════${NC}"p
 echo -e " ${blue}Local TZ               :  Asia/Jakarta ${NC}"
 echo -e " ${blue}Time                   :  $jam WIB ${NC}"
@@ -171,32 +171,37 @@ echo -e   ""
 echo -e " 11 ⸩ Create XRay VMess"
 echo -e " 12 ⸩ Delete XRay VMess"
 echo -e " 13 ⸩ Renew XRay VMess"
+echo -e " 14 ⸩ Cek XRay Vmess"
 echo -e ""
-echo -e " 14 ⸩ Create XRay VLess"
-echo -e " 15 ⸩ Delete XRay VLess"
-echo -e " 16 ⸩ Renew XRay VLess"
+echo -e " 15 ⸩ Create XRay VLess"
+echo -e " 16 ⸩ Delete XRay VLess"
+echo -e " 17 ⸩ Renew XRay VLess"
+echo -e " 18 ⸩ Cek XRay VLess"
 echo -e ""
-echo -e " 17 ⸩ Create XRay Trojan GFW"
-echo -e " 18 ⸩ Delete XRay Trojan GFW"
-echo -e " 19 ⸩ Renew XRay Trojan GFW"
+echo -e " 19 ⸩ Create XRay Trojan GFW"
+echo -e " 20 ⸩ Delete XRay Trojan GFW"
+echo -e " 21 ⸩ Renew XRay Trojan GFW"
+echo -e " 12 ⸩ Cek XRay Trojan GFW"
 echo -e ""
-echo -e " 20 ⸩ Create XRay Trojan GO"
-echo -e " 21 ⸩ Delete XRay Trojan GO"
-echo -e " 22 ⸩ Renew XRay Trojan GO"
+echo -e " 23 ⸩ Create XRay Trojan GO"
+echo -e " 24 ⸩ Delete XRay Trojan GO"
+echo -e " 25 ⸩ Renew XRay Trojan GO"
+echo -e " 26 ⸩ Cek XRay Trojan GO" 
 echo -e   ""
 echo -e "${red}══════════════════════════════════════════════════════════${NC}"
 
 echo -e "                 • SYSTEM •                 " | lolcat
 echo -e "${red}══════════════════════════════════════════════════════════${NC}"
 echo -e   ""
-echo -e " 23 ⸩ Add New Host"
-echo -e " 24 ⸩ Restart All Service"
-echo -e " 25 ⸩ Check Ram Usage"
-echo -e " 26 ⸩ Check Bandwith Usage"
-echo -e " 27 ⸩ Sett AutoReboot"
-echo -e " 28 ⸩ Clear Log"
-echo -e " 29 ⸩ Change SSH Banner"
-echo -e " 30 ⸩ Kernel Update"
+echo -e " 27 ⸩ Add New Host"
+echo -e " 28 ⸩ Restart All Service"
+echo -e " 29 ⸩ Check Ram Usage"
+echo -e " 30 ⸩ Check Bandwith Usage"
+echo -e " 31 ⸩ Sett AutoReboot"
+echo -e " 32 ⸩ Clear Log"
+echo -e " 33 ⸩ Change SSH Banner"
+echo -e " 34 ⸩ Kernel Update"
+echo -e " 35 ⸩ Status"
 echo -e ""
 echo -e "${red}══════════════════════════════════════════════════════════${NC}"
 echo -e " 0 ⸩ Reboot"
@@ -219,24 +224,28 @@ case $opt in
 11) clear ; add-xr ;;
 12) clear ; del-xr ;;
 13) clear ; renewws ;;
-14) clear ; add-xvless ;;
-15) clear ; del-xvless ;;
-16) clear ; renewvless ;;
-17) clear ; add-tr ;;
-18) clear ; del-tr ;;
-19) clear ; renew-tr ;;
-20) clear ; add-trg ;;
-21) clear ; del-trg ;;
-22) clear ; renew-trg ;;
-23) clear ; add-host ;;
-24) clear ; resett ;;
-25) clear ; ram ;;
-26) clear ; bw ;;
-27) clear ; auto-reboot ;;
-28) clear ; clear-log ;;
-25) clear ; nano /etc/issue.net ;;
-26) clear ; kernel-updt ;;
-27) clear ; running ;;
+14) clear ; cek-ws ;;
+15) clear ; add-xvless ;;
+16) clear ; del-xvless ;;
+17) clear ; renewvless ;;
+18) clear ; cek-vless ;;
+19) clear ; add-tr ;;
+20) clear ; del-tr ;;
+21) clear ; renew-tr ;;
+22) clear ; cek-tr ;;
+23) clear ; add-trg ;;
+24) clear ; del-trg ;;
+25) clear ; renew-trg ;;
+26) clear ; cek-trgo
+27) clear ; add-host ;;
+28) clear ; resett ;;
+29) clear ; ram ;;
+30) clear ; bw ;;
+31) clear ; auto-reboot ;;
+32) clear ; clear-log ;;
+33) clear ; nano /etc/issue.net ;;
+34) clear ; kernel-updt ;;
+35) clear ; status ;;
 0) clear ; reboot ;;
 x) exit ;;
 *) sleep 1; menu ;;
